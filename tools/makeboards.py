@@ -19,6 +19,8 @@ mcu_dict = {
 def get_mcu(name):
     if name == 'feather52832':
         return 52832
+    elif '52833' in name:
+        return 52833
     else:
         return 52840
 

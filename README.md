@@ -1,3 +1,13 @@
+# techdisc arduino support 
+
+Link this repo into the hardware section of the arduino ide
+
+1. git submodule update --init
+2. cd ~/Documents/Arduino; mkdir hardware; cd hardware
+3. ln -s ~/code/Adafruit_nRF52_Arduino techdisc
+4. Restart the Arduino IDE
+5. select 'nRF52833 TechDisc' from the Tools -> Board menu, which will update your system config to use the right compiler and settings for the nRF52.
+
 # Arduino Core for Adafruit Bluefruit nRF52 Boards
 
 [![Build Status](https://github.com/adafruit/Adafruit_nRF52_Arduino/workflows/Build/badge.svg)](https://github.com/adafruit/Adafruit_nRF52_Arduino/actions)
