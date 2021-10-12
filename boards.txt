@@ -122,7 +122,7 @@ techdisc52833.upload.protocol=nrfutil
 techdisc52833.upload.use_1200bps_touch=true
 techdisc52833.upload.wait_for_upload_port=true
 techdisc52833.upload.maximum_size=290816
-techdisc52833.upload.maximum_data_size=52224
+techdisc52833.upload.maximum_data_size=106496
 
 # Build
 techdisc52833.build.mcu=cortex-m4
