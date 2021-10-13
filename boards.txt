@@ -615,7 +615,7 @@ generic_nrf52833.build.vid=0x1915
 generic_nrf52833.build.pid=0x521F
 
 # SofDevice Menu
-generic_nrf52833.menu.softdevice.s140v6=0.3.2 SoftDevice s140 6.1.1
+generic_nrf52833.menu.softdevice.s140v6=0.5.0 SoftDevice s140 6.1.1
 generic_nrf52833.menu.softdevice.s140v6.build.sd_name=s140
 generic_nrf52833.menu.softdevice.s140v6.build.sd_version=6.1.1
 generic_nrf52833.menu.softdevice.s140v6.build.sd_fwid=0x00B6
@@ -630,7 +630,6 @@ generic_nrf52833.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
 generic_nrf52833.menu.debug.l3=Level 3 (Segger SystemView)
 generic_nrf52833.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
 generic_nrf52833.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
-
 
 # ----------------------------------
 # Nordic nRF52840DK (PCA10056)
