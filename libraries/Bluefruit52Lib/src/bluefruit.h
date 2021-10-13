@@ -39,6 +39,8 @@
 // Allocate more memory for GATT table for 840
 #ifdef NRF52840_XXAA
   #define CFG_SD_ATTR_TABLE_SIZE    0x1000
+#elif NRF52833_XXAA
+  #define CFG_SD_ATTR_TABLE_SIZE    0x1000
 #else
   #define CFG_SD_ATTR_TABLE_SIZE    0xC00
 #endif

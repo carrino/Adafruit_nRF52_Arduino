@@ -106,14 +106,14 @@ feather52840.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
 techdisc52833.name=TechDisc nrf52833
 
 # VID/PID for Bootloader, Arduino & CircuitPython
-#techdisc52833.vid.0=0x239A
-#techdisc52833.pid.0=0x8087
-#techdisc52833.vid.1=0x239A
-#techdisc52833.pid.1=0x0087
-#techdisc52833.vid.2=0x239A
-#techdisc52833.pid.2=0x0088
-#techdisc52833.vid.3=0x239A
-#techdisc52833.pid.3=0x8088
+techdisc52833.vid.0=0x239A
+techdisc52833.pid.0=0x8087
+techdisc52833.vid.1=0x239A
+techdisc52833.pid.1=0x0087
+techdisc52833.vid.2=0x239A
+techdisc52833.pid.2=0x0088
+techdisc52833.vid.3=0x239A
+techdisc52833.pid.3=0x8088
 
 # Upload
 techdisc52833.bootloader.tool=bootburn
@@ -134,8 +134,10 @@ techdisc52833.build.usb_manufacturer="TechDisc LLC"
 techdisc52833.build.usb_product="TechDisc nrf52833"
 techdisc52833.build.extra_flags=-DNRF52833_XXAA {build.flags.usb}
 techdisc52833.build.ldscript=nrf52833_s140_v6.ld
-techdisc52833.build.vid=0x1915
-techdisc52833.build.pid=0x521F
+#techdisc52833.build.vid=0x1915
+#techdisc52833.build.pid=0x521F
+techdisc52833.build.vid=0x239A
+techdisc52833.build.pid=0x8087
 
 # SoftDevice Menu
 techdisc52833.menu.softdevice.s140v6=S140 6.1.1
