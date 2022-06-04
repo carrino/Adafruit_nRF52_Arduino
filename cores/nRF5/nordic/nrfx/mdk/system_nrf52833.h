@@ -30,25 +30,17 @@ POSSIBILITY OF SUCH DAMAGE.
 
 */
 
-#ifndef NRF_ERRATAS_H
-#define NRF_ERRATAS_H
+#ifndef SYSTEM_NRF52833_H
+#define SYSTEM_NRF52833_H
 
-#include "nrf.h"
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-/*lint ++flb "Enter library region */
+#include "system_nrf.h"
 
-#ifdef NRF52833_XXAA
+#ifdef __cplusplus
+}
+#endif
 
-#include "nrf52833_erratas.h"
-
-#else
-
-#include "nrf51_erratas.h"
-#include "nrf52_erratas.h"
-#include "nrf53_erratas.h"
-#include "nrf91_erratas.h"
-
-/*lint --flb "Leave library region" */
-
-#endif // NRF52833_XXAA
-#endif // NRF_ERRATAS_H
+#endif /* SYSTEM_NRF52833_H */

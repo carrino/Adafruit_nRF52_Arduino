@@ -30,7 +30,7 @@
 #include "rtos.h"
 
 
-#ifdef NRF52840_XXAA
+#if defined(NRF52840_XXAA)
   #define BOOTLOADER_ADDR        0xF4000
 #else
   #define BOOTLOADER_ADDR        0x74000

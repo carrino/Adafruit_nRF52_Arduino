@@ -25,7 +25,7 @@
 #include "InternalFileSystem.h"
 #include "flash/flash_nrf5x.h"
 
-#ifdef NRF52840_XXAA
+#if defined(NRF52840_XXAA)
 #define LFS_FLASH_ADDR        0xED000
 #else
 #define LFS_FLASH_ADDR        0x6D000
