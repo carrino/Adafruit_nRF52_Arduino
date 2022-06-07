@@ -665,3 +665,61 @@ particle_xenon.menu.debug_output.serial1=Serial1
 particle_xenon.menu.debug_output.serial1.build.logger_flags=-DCFG_LOGGER=1 -DCFG_TUSB_DEBUG=CFG_DEBUG
 particle_xenon.menu.debug_output.rtt=Segger RTT
 particle_xenon.menu.debug_output.rtt.build.logger_flags=-DCFG_LOGGER=2 -DCFG_TUSB_DEBUG=CFG_DEBUG -DSEGGER_RTT_MODE_DEFAULT=SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL
+
+
+# ----------------------------------
+# TechDisc nRF52833
+# ----------------------------------
+feather52840.name=Adafruit Feather nRF52840 Express
+
+# VID/PID for bootloader with/without UF2, Arduino + Circuitpython App
+techdisc52833.vid.0=0x239A
+techdisc52833.pid.0=0x8029
+techdisc52833.vid.1=0x239A
+techdisc52833.pid.1=0x0029
+techdisc52833.vid.2=0x239A
+techdisc52833.pid.2=0x002A
+techdisc52833.vid.3=0x239A
+techdisc52833.pid.3=0x802A
+
+# Upload
+techdisc52833.bootloader.tool=bootburn
+techdisc52833.upload.tool=nrfutil
+techdisc52833.upload.protocol=nrfutil
+techdisc52833.upload.use_1200bps_touch=true
+techdisc52833.upload.wait_for_upload_port=true
+techdisc52833.upload.maximum_size=290816
+techdisc52833.upload.maximum_data_size=106496
+
+# Build
+techdisc52833.build.mcu=cortex-m4
+techdisc52833.build.f_cpu=64000000
+techdisc52833.build.board=NRF52833
+techdisc52833.build.core=nRF5
+# techdisc52833.build.variant=
+techdisc52833.build.variant=techdisc_nrf52833
+techdisc52833.build.usb_manufacturer="TechDisc LLC"
+techdisc52833.build.usb_product="TechDisc nrf52833"
+techdisc52833.build.extra_flags=-DNRF52833_XXAA {build.flags.usb}
+techdisc52833.build.ldscript=nrf52833_s140_v6.ld
+techdisc52833.build.vid=0x239A
+techdisc52833.build.pid=0x8029
+
+# SofDevice Menu
+techdisc52833.menu.softdevice.s140v6=0.4.1 SoftDevice s140 6.1.1
+techdisc52833.menu.softdevice.s140v6.build.sd_name=s140
+techdisc52833.menu.softdevice.s140v6.build.bl_version=0.4.1
+techdisc52833.menu.softdevice.s140v6.build.sd_version=6.1.1
+techdisc52833.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+
+# Debug Menu
+techdisc52833.menu.debug.l0=Level 0 (Release)
+techdisc52833.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+techdisc52833.menu.debug.l1=Level 1 (Error Message)
+techdisc52833.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+techdisc52833.menu.debug.l2=Level 2 (Full Debug)
+techdisc52833.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+techdisc52833.menu.debug.l3=Level 3 (Segger SystemView)
+techdisc52833.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+techdisc52833.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+
